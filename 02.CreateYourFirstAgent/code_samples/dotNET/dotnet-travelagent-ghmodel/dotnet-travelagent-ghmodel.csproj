@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>dotnet_travelagent_ghmodel</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -10,13 +10,11 @@
 
   <ItemGroup>
     <PackageReference Include="DotNetEnv" Version="3.1.1" />
-    <PackageReference Include="Microsoft.Extensions.AI" Version="10.4.0" />
-    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.4.0" />
-    <PackageReference Include="OpenAI" Version="2.9.1" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Your_Microsoft.Agents.AI.OpenAI_Project_Path" />
-    <ProjectReference Include="Your_Microsoft.Agents.AI_Project_Path" />
+    <PackageReference Include="Microsoft.Extensions.AI" Version="*" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="*" />
+    <PackageReference Include="Azure.AI.OpenAI" Version="*" />
+    <PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="*" />
+    <PackageReference Include="Progress.Observability.Instrumentation" Version="1.2.2" />
   </ItemGroup>
 
 
